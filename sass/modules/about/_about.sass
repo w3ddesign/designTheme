@@ -1,0 +1,45 @@
+#about
+	background: $grey
+
+	article
+		padding: 4em 0
+	
+.branding, .websites
+	padding: 3em 0
+	max-width: $guide
+	margin: 0 auto
+	width: 60%
+	@include flexbox($val2: column)
+		
+	p
+		max-width: 600px
+		font-size: 1em
+		color: $dark-blue
+		margin: 1.2em auto
+		text-align: center
+	
+.websites
+	figure
+		order: -1
+	
+@media screen and (min-width: 60em)
+	.branding, .websites
+		@include flexbox($val2: row, $val4: space-around)
+	
+		p
+			font-size: 1.3em
+			margin-left: 50px
+			margin-right: 50px
+			padding: 0
+			text-align: left
+	
+	.websites
+		figure
+			order: 2
+	
+@media screen and (min-width: 100em)
+	
+	.branding, .websites
+		p
+			margin: 0
+	

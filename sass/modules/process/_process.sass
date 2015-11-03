@@ -1,0 +1,25 @@
+#process
+	background: $grey
+
+	h2
+		padding-top: 3em
+	
+.steps
+	padding: 3em 0
+	@include flexbox($val2: column)
+	max-width: $guide
+	width: 90%
+	margin: 0 auto
+	figure
+		max-width: 300px
+		margin-bottom: 25px
+	
+		h4
+			margin-bottom: 15px
+		img
+			margin: 15px auto
+	
+@media screen and (min-width: 65em)
+	.steps
+		@include flexbox($val2: row)
+		

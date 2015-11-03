@@ -1,0 +1,111 @@
+.socket
+	background: url(../images/socket.png) no-repeat
+	background-color: $dark-blue
+	background-attachment: fixed
+
+.farewell
+	height: 40vh
+	position: relative
+	display: none
+	
+	h6
+		color: $white
+		font-size: 2.5em
+		max-width: 600px
+		margin: 0 auto
+		font-family: $header-font
+		
+.socket-container
+	background: $dark-blue
+	margin: 0 auto
+	width: 100%
+
+.multicolumn
+	@include flexbox($val2: column)
+	max-width: $guide
+	margin: 0 auto
+	width: 90%
+	
+
+	article
+		color: $white
+		width: 70%
+		text-align: center
+		margin: 15px auto
+		max-width: 350px
+	
+		h4
+			margin: 10px auto
+			font-family: $header-font
+			
+		a
+			color: $white
+			transition: all 0.35s ease-in-out
+			
+			&:hover
+				color: $blue
+	
+	.touch
+		margin: 0
+	
+	.social ul
+		@include flexbox($val2: row)
+		max-width: 200px
+		justify-content: space-around
+		margin: 0 auto
+	
+	
+	
+footer
+	display: inline-block
+	background: $dark-blue
+	width: 100%
+	
+	p
+		color: $white
+		text-align: center
+		padding: 25px 0
+	a
+		display: inline
+		color: $blue
+		font-family: $header-font
+		transition: all 0.35s ease-in-out
+		
+		&:hover
+			color: $white
+	
+@media screen and (min-width: 60em)
+	.farewell
+		@include flexbox
+		justify-content: center
+		align-items: center
+	
+	.multicolumn
+		@include flexbox($val2: row)
+		justify-content: space-between
+		align-items: center
+		padding: 45px 0
+		
+		article
+			margin: 0
+			padding: 0
+			height: 180px
+			text-align: left
+			
+			h4
+				text-align: left
+				font-family: $header-font
+				font-size: 1.4em
+		
+		.touch
+			margin-left: 125px
+	
+			p
+				line-height: 2
+		
+		.follow
+			h4
+				margin-left: 25px
+		
+		.social ul
+			margin: 0

@@ -1,0 +1,69 @@
+.puzzle
+	height: 60vh
+	background: $grey
+	position: relative
+	z-index: -1
+	overflow: hidden
+	padding: 40px 0
+
+	h3
+		position: absolute
+		bottom: 10%
+		left: 50%
+		margin-left: -170px
+		color: $red
+
+	span
+		text-decoration: line-through
+
+.pieces
+	position: absolute
+	top: 10%
+	left: 50%
+	flex-wrap: wrap
+	width: 750px
+	height: 750px
+	margin-left: -375px
+	display: none
+
+	figure
+		width: 50%
+		margin: 0
+		padding: 0
+
+.listen
+	position: relative
+	left: 11%
+	top: -3.5%
+
+.develop
+	position: relative
+	right: 0.25%
+	bottom: 20.8%
+.learn
+	position: relative
+	right: 5.5%
+	top: 1.7%
+
+.design
+	position: relative
+	right: 10.7%
+	bottom: 14.8%
+
+.small-puzzle
+	margin: 0 auto
+	max-width: 500px
+	width: 90%
+
+	img
+		margin: 0 auto
+
+@media screen and (min-width: 40em)
+	.puzzle
+		height: 100vh
+
+	.pieces
+		@include flexbox
+
+	.small-puzzle
+		display: none

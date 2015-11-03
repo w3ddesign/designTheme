@@ -1,0 +1,34 @@
+header
+	overflow: hidden
+	background: $blue
+	height: 77vh
+	@include flexbox
+	justify-content: center
+
+.welcome
+	margin-top: 100px
+.buttons
+		@include flexbox
+		max-width: 500px
+		margin: 65px auto
+		text-align: center
+		flex-wrap: wrap
+	
+		.button
+			color: $white
+			border: 2px solid $white
+			padding: 15px
+			border-radius: 10px
+			margin: 5px 20px
+			font-size: 1.2em
+			transition: all 0.35s ease-in-out
+			width: 175px
+	
+			&:hover
+				color: $blue
+				background: $white
+
+@media screen and (min-width: 45em)
+	.buttons
+		flex-wrap: nowrap
+	

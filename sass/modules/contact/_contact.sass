@@ -1,0 +1,85 @@
+#contact
+	background: $grey
+
+	p
+		margin: 75px auto
+		max-width: 1000px
+		text-align: center
+		width: 90%
+		color: $dark-blue
+
+.contact-form
+	@include flexbox($val2: column)
+	max-width: $guide
+	width: 90%
+	margin: 0 auto
+	padding-bottom: 75px
+
+	input, textarea
+		margin: 15px 0
+		width: 50%
+		border: none
+		background: $grey
+		border-left: 1px solid $dark-blue
+		border-bottom: 1px solid $dark-blue
+		padding: 10px
+
+	textarea
+		height: 100px
+
+	input[type="submit"]
+		color: $dark-blue
+		width: 160px
+		padding: 10px
+		text-align: center
+		border: 1px solid $dark-blue
+		margin: 25px auto
+		border-radius: 10px
+		transition: all 0.35s ease-in-out
+		font-family: $header-font
+
+		&:hover
+			background: $dark-blue
+			color: $white
+
+::-webkit-input-placeholder
+	color: $dark-blue
+
+::-moz-placeholder
+	color: $dark-blue
+
+:-moz-placeholder
+	color: $dark-blue
+
+::-ms-input-placeholder
+	color: $dark-blue
+
+.budget
+	width: 50%
+	height: 50px
+	border-radius: 0px !important
+	margin: 50px auto 25px auto
+	padding-left: 10px
+	position: relative
+
+	span
+		position: absolute
+		bottom: 50px
+		left: 15px
+		font-family: $font
+		font-size: 0.9em
+	.budget_value
+		color: $dark-blue
+		text-align: center
+		margin: 11px auto
+		border-top: 1px solid $dark-blue
+		padding: 20px 0
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+	border: none
+	background: url(../images/slider.svg) center center no-repeat
+	width: 32px
+	height: 32px
+
+.ui-widget-content
+	border: none

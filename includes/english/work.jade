@@ -1,0 +1,24 @@
+mixin work(img, title, link)
+	a.work-item(href="#{link}")
+		figure
+			img.thumbnail(src="#{img}")
+			figcaption
+				h3 #{title}
+				.icons
+					img(src="images/work/search.svg", alt="")
+					img(src="images/work/world.svg", alt="")
+
+section#work
+	h2 OUR WORK
+	.dots
+		.dot
+		.dot
+		.dot
+		
+	.work
+		+work("images/work/proj1.jpg", "Octogon Sports Center", "#")
+		+work("images/work/proj2.jpg", "Octogon Sports Center", "#")
+		+work("images/work/proj3.jpg", "Octogon Sports Center", "#")
+		+work("images/work/proj4.jpg", "Octogon Sports Center", "#")
+		+work("images/work/proj5.jpg", "Octogon Sports Center", "#")
+		+work("images/work/proj6.jpg", "Octogon Sports Center", "#")

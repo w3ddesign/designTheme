@@ -1,0 +1,37 @@
+.cta
+	background: $blue
+
+.call
+	@include flexbox($val2: column)
+	padding: 25px 0
+	max-width: $guide
+	width: 90%
+	margin: 0 auto
+	
+	h4
+		font-size: 1.2em
+		color: $white
+		margin: 0
+		margin-bottom: 25px
+		padding: 0
+	
+	.button
+		width: 170px
+		padding: 15px 10px
+		border: 2px solid $white
+		border-radius: 10px
+		text-align: center
+		color: $white
+		transition: all 0.35s ease-in-out
+	
+		&:hover
+			background: $white
+			color: $blue
+	
+@media screen and (min-width: 50em)
+	.call
+		@include flexbox($val2: row)
+		
+		h4
+			font-size: 1.6em
+			margin: 0

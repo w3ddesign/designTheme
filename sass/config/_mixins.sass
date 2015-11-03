@@ -1,0 +1,16 @@
+// FLEXBOX MIXIN
+
+@mixin flexbox($val1: flex, $val2:row, $val3:center, $val4:space-around)
+	display: $val1
+	flex-direction: $val2
+	align-items: $val3
+	justify-content: $val4
+
+// DOTS MIXIN
+
+@mixin dot($color: $blue)
+	width: 10px
+	height: 10px
+	background: $color
+	border-radius: 50%
+	margin: 0 8px
